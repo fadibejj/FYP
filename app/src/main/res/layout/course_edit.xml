@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/relativeLayout">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:gravity="center"
+        android:text="Please enter your course information"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <EditText
+        android:id="@+id/courseName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:ems="10"
+        android:hint="Course Name (EECE 502)"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <EditText
+        android:id="@+id/targetGrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Target Grade (80)"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/courseName"
+        app:layout_constraintTop_toBottomOf="@+id/courseName"
+        app:layout_constraintLeft_toLeftOf="@+id/courseName" />
+
+    <EditText
+        android:id="@+id/hoursWillingToStudy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Hours Willing to study (5)"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/targetGrade"
+        app:layout_constraintTop_toBottomOf="@+id/targetGrade"
+        app:layout_constraintLeft_toLeftOf="@+id/targetGrade" />
+
+    <EditText
+        android:id="@+id/difficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Difficulty (0.4)"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/hoursWillingToStudy"
+        app:layout_constraintTop_toBottomOf="@+id/hoursWillingToStudy"
+        app:layout_constraintLeft_toLeftOf="@+id/hoursWillingToStudy" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:text="Submit"
+        app:layout_constraintTop_toBottomOf="@+id/difficulty"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+</android.support.constraint.ConstraintLayout>
